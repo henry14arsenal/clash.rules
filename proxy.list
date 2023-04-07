@@ -1,8 +1,6 @@
 #代理规则
 
-DOMAIN-SUFFIX,lojadomecanico.com.br
 DOMAIN-SUFFIX,pumpkintool.com
-DOMAIN-SUFFIX,kimbino.ca
 DOMAIN-SUFFIX,lmclub.cc
 DOMAIN-SUFFIX,zh.dotabuff.com
 DOMAIN-SUFFIX,justdial.com
@@ -13,7 +11,6 @@ DOMAIN-SUFFIX,herco.com.ph
 DOMAIN-SUFFIX,adendorff.co.za
 DOMAIN-SUFFIX,kknews.cc
 DOMAIN-SUFFIX,wipo.int
-DOMAIN-SUFFIX,marazul.cl
 DOMAIN-SUFFIX,vito-tools.pt
 DOMAIN-SUFFIX,lgtools.co.za
 DOMAIN-SUFFIX,mactools.com
@@ -22,17 +19,11 @@ DOMAIN-SUFFIX,krisbow.com
 DOMAIN-SUFFIX,jbmcamp.com
 DOMAIN-SUFFIX,volta.md
 DOMAIN-SUFFIX,fenglougo.com
-DOMAIN-SUFFIX,lainnovacion.com.do
-DOMAIN-SUFFIX,innovacentro.com.do
 DOMAIN-SUFFIX,mailtester.com
 DOMAIN-SUFFIX,wabrotech.pl
-DOMAIN-SUFFIX,homehardware.ca
-DOMAIN-SUFFIX,mercadolibre.com.ar
-DOMAIN-SUFFIX,guepar.com.br
 DOMAIN-SUFFIX,dedra.pl
 DOMAIN-SUFFIX,apkflash.com
 DOMAIN-SUFFIX,v2rayssr.com
-DOMAIN-SUFFIX,voya.com
 DOMAIN-SUFFIX,naiyouu.com
 DOMAIN-SUFFIX,hitun.io
 DOMAIN-SUFFIX,fuqing.cz
@@ -50,15 +41,12 @@ DOMAIN-SUFFIX,harborfreight.com
 DOMAIN-SUFFIX,homehardware.sirv.com
 DOMAIN-SUFFIX,onedrive.live.com
 DOMAIN-SUFFIX,paradoxplaza.com
-DOMAIN-SUFFIX,urrea.com
 DOMAIN-SUFFIX,docs.cfw.lbyczf.com
 DOMAIN-SUFFIX,simbatools.co.ke
-DOMAIN-SUFFIX,insurance.ca.gov
 DOMAIN-SUFFIX,wixsite.com
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,pilship.com
 DOMAIN-SUFFIX,tualatin.club
-DOMAIN-SUFFIX,jegs.com
 DOMAIN-SUFFIX,ecuworldwide.com
 DOMAIN-SUFFIX,sms-activate.org
 DOMAIN-SUFFIX,gofile.io
