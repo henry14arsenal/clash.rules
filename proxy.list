@@ -6,7 +6,6 @@ DOMAIN-SUFFIX,zh.dotabuff.com
 DOMAIN-SUFFIX,justdial.com
 DOMAIN-SUFFIX,puuilo.fi
 DOMAIN-SUFFIX,linkedin.com
-DOMAIN-SUFFIX,eastwood.com
 DOMAIN-SUFFIX,herco.com.ph
 DOMAIN-SUFFIX,adendorff.co.za
 DOMAIN-SUFFIX,kknews.cc
@@ -37,8 +36,6 @@ DOMAIN-SUFFIX,mega.co.nz
 DOMAIN-SUFFIX,betterrepack.com
 PROCESS-NAME,KKManager.exe
 PROCESS-NAME,StandaloneUpdater.exe
-DOMAIN-SUFFIX,harborfreight.com
-DOMAIN-SUFFIX,homehardware.sirv.com
 DOMAIN-SUFFIX,onedrive.live.com
 DOMAIN-SUFFIX,paradoxplaza.com
 DOMAIN-SUFFIX,docs.cfw.lbyczf.com
