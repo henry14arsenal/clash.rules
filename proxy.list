@@ -87,3 +87,4 @@ DOMAIN-SUFFIX,opensubtitles.org
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudflareinsights.com
 DOMAIN-SUFFIX,awelco.com
+PROCESS-NAME,ui32.exe
