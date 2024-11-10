@@ -102,3 +102,4 @@ DOMAIN-SUFFIX,getsurfboard.com
 DOMAIN-SUFFIX,keygree.com
 DOMAIN-SUFFIX,tsuzumijapan.com
 PROCESS-NAME,WinStore.App.exe
+PROCESS-NAME,Devices.App.exe
