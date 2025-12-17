@@ -13,7 +13,7 @@ function main(config) {
       icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png",
       type: "url-test",
       "include-all": true,
-      "exclude-filter": "(?i)香港|Hong Kong|HK|hongkong",
+//      "exclude-filter": "(?i)香港|Hong Kong|HK|hongkong",
       interval: 300,
       tolerance: 50
     },
@@ -156,7 +156,7 @@ function main(config) {
       icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png",
       "include-all": true,
       filter: "(?i)港|HK|hk|Hong Kong|HongKong|hongkong",
-      type: "url-test",
+      type: "load-balance",
       interval: 300,
       tolerance: 50
     },
@@ -165,7 +165,7 @@ function main(config) {
       icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png",
       "include-all": true,
       filter: "(?i)台|新北|彰化|TW|Taiwan",
-      type: "url-test",
+      type: "load-balance",
       interval: 300,
       tolerance: 50
     },
@@ -174,7 +174,7 @@ function main(config) {
       icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png",
       "include-all": true,
       filter: "(?i)新加坡|坡|狮城|SG|Singapore",
-      type: "url-test",
+      type: "load-balance",
       interval: 300,
       tolerance: 50
     },
@@ -183,6 +183,7 @@ function main(config) {
       icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png",
       "include-all": true,
       filter: "(?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States",
+      "exclude-filter": "Australia",
       type: "url-test",
       interval: 300,
       tolerance: 50
@@ -192,7 +193,7 @@ function main(config) {
       icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png",
       "include-all": true,
       filter: "(?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan",
-      type: "url-test",
+      type: "load-balance",
       interval: 300,
       tolerance: 50
     },
@@ -201,7 +202,7 @@ function main(config) {
       icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png",
       "include-all": true,
       filter: "(?i)KR|Korea|KOR|首尔|韩|韓",
-      type: "url-test",
+      type: "load-balance",
       interval: 300,
       tolerance: 50
     },
@@ -252,6 +253,30 @@ function main(config) {
     BanProgramAD: {
       url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list",
       path: "./ruleset/BanProgramAD.list",
+      behavior: "classical",
+      interval: 86400,
+      format: "text",
+      type: "http"
+    },
+    "美国节点": {
+      url: "https://testingcf.jsdelivr.net/gh/henry14arsenal/clash.rules@master/usa.list",
+      path: "./ruleset/USline.list",
+      behavior: "classical",
+      interval: 86400,
+      format: "text",
+      type: "http"
+    },
+    "私人梯子": {
+      url: "https://testingcf.jsdelivr.net/gh/henry14arsenal/clash.rules@master/proxy.list",
+      path: "./ruleset/PrivateVPN.list",
+      behavior: "classical",
+      interval: 86400,
+      format: "text",
+      type: "http"
+    },
+    "私人直连": {
+      url: "https://testingcf.jsdelivr.net/gh/henry14arsenal/clash.rules@master/direct.list",
+      path: "./ruleset/PrivateDirect.list",
       behavior: "classical",
       interval: 86400,
       format: "text",
@@ -455,6 +480,9 @@ function main(config) {
     "RULE-SET,UnBan,全球直连",
     "RULE-SET,BanAD,广告拦截",
     "RULE-SET,BanProgramAD,应用净化",
+    "RULE-SET,私人直连,全球直连",
+    "RULE-SET,美国节点,美国节点",
+    "RULE-SET,私人梯子,手动切换",
     "RULE-SET,GoogleFCM,谷歌FCM",
     "RULE-SET,GoogleCN,全球直连",
     "RULE-SET,SteamCN,全球直连",
@@ -478,7 +506,8 @@ function main(config) {
     "RULE-SET,ChinaCompanyIp,全球直连",
     "RULE-SET,Download,全球直连",
     "GEOIP,CN,全球直连",
-    "MATCH,漏网之鱼"
+    "GEOIP,BR,美国节点",
+    "MATCH,全球直连"
   ];
   return config;
 }
